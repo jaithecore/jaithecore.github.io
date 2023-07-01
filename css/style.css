@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #eee;
-  font-family: "Agdasima", sans-serif;
+  font-family: "Ysabeau Infant", sans-serif;
 }
 
 * {
@@ -38,7 +38,7 @@ img {
   padding: 1rem 3rem;
   gap: 0.5rem;
   min-height: 80vh;
-  background-color: red;
+  align-items: center;
 }
 
 .container img {
@@ -61,4 +61,24 @@ img {
 .active {
   font-weight: bold;
   font-size: 2rem;
+}
+
+.container-two {
+  padding: 1rem 3rem;
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-two > h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.container-two > div {
+  display: flex;
+  gap: 8rem;
+  padding: 1rem 4rem;
 }
