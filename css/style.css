@@ -101,6 +101,11 @@ img {
   display: none;
 }
 
+.sidebar {
+  display: none;
+}
+
+/* Mobile view */
 @media screen and (max-width: 500px) {
   nav {
     padding: 0.5rem 1rem;
@@ -142,5 +147,51 @@ img {
 
   .mobile > img {
     width: 2rem;
+  }
+
+  .sidebar {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    z-index: 1;
+    background-color: black;
+    justify-content: flex-end;
+  }
+
+  .closing-section {
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+  }
+
+  .sidebar-container {
+    width: 80%;
+    background-color: #fff;
+  }
+
+  .sidebar:target {
+    display: flex;
+  }
+
+  .sidebar-container > ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .sidebar-container li {
+    display: block;
+  }
+
+  .sidebar-container a {
+    padding: 1rem 0.5rem;
+    display: block;
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .sidebar-container a:hover {
+    background-color: #ddd;
   }
 }
