@@ -1,0 +1,59 @@
+html {
+    --bgColor: #d8dee4;
+    --txtColor: #232323;
+    --hColor: #000;
+    --brandColor: #1F883D;
+    --border-radius: 4px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+[type="button"] {
+    background: var(--brandColor, "green");
+    color: var(--cardBg);
+    border: none;
+    padding: 0.3rem 0.8rem;
+    font-weight: bold;
+    border-radius: calc( var(--border-radius));
+}
+
+body {
+    --cardBg: #fff;
+    --border: 1px solid #bcbcbc;
+    --paddingX: 2vw;
+    background-color: var(--bgColor, "white");
+    color: var(--txtColor, "black");
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+body > div {
+    background-color: var(--cardBg, "#fff");
+    padding: 0.5rem var(--paddingX);
+    max-width: 300px;
+    border: var(--border, "1px solid #bcbcbc");
+    border-radius: var(--border-radius);
+}
+
+body > div > div:nth-of-type(2) {
+    border: var(--border, "1px solid #bcbcbc");
+    background: var(--bgColor, "#fff");
+    padding: 0rem;
+    border-radius: calc( var(--border-radius));
+}
+
+body > div > div:nth-of-type(2) > div:nth-of-type(1) {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cardBg);
+    border-bottom: var(--border, "1px solid #bcbcbc");
+    border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+}
