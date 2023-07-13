@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.parent {
+    width: 100%;
+    min-height: 100vh;
+    background: #eee;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(250px, 1fr));
+    grid-auto-rows: max-content;
+    gap: 0.5rem;
+
+.child {
+    background: white;
+}
+
+.child:nth-of-type(2) {
+    background: green;
+    
+}
+
+.child:nth-of-type(3) {
+    background: green;
+    
+}
+
+@media screen and (max-width: 800px) {
+    .child:nth-of-type(2) {
+    background: #997dff;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.child:nth-of-type(3) {
+    background: #997dff;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+}

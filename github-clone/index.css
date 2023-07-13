@@ -1,0 +1,38 @@
+html {
+  --bgColor: #d8dee4;
+  --placeholderColor: #adadad;
+  --outlineColor: #047bb2;
+  --txtColor: black;
+  --surface: #fff;
+}
+
+:root {
+  --brandColor: #1f883d;
+  --radius: 0.5rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bgColor, "#d8dee4");
+}
+
+img {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  grid-template-columns: minmax(25%, max-content) 1fr;
+  grid-template-rows: minmax(100vh, 1fr);
+  gap: 0.5rem;
+}
+
+main > div:nth-of-type(1) {
+  background-color: var(--surface, "#fff");
+  padding: 0.5rem;
+}
