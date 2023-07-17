@@ -1,37 +1,132 @@
-// creating the object
-let user = {
-  name: "jai",
-  address: {
-    street: "The Unnamed road",
-    houseNo: 434,
-  },
-  phone: 123456789,
-};
+// Conditional statements
+// let user = "ram";
 
-// first i have to select the phone field from the "user object
-// secind i have to update field with new value
+// if statement
+// if (user === "jai") {
+//   console.log("Welcome Jai");
+// } else {
+//   console.log("Your are not jai :|");
+// }
 
-// if you have the change the value of the field your have to use "." and then field name
-user.name = "sahil";
+// else if
+// if (user === "jai") {
+//   console.log("Welcome Jai");
+// } else if (user = "ram") {
+//   console.log("Welcome Ram");
+// } else {
+//   console.log("Your are not jai neither Ram :|");
+// }
 
-// TODO - Add a new field in the object named "isVerified" have a value false
-user.randomValue = true;
-user.sahil = true;
+// switch statement
+// switch (user) {
+//   case "jai":
+//     console.log("Welcome Jai");
+//     break;
+//   case "ram":
+//     console.log("Welcome Ram ");
+//     break;
+//   default:
+//     console.log("Your are not jai neither Ram :|");
+// }
 
-user["sahil"] = true;
+// Loops
 
-// this will print the "user" object
-console.log(user);
+// "for" loop
+// for (let i = 0; i < 5; i++) {
+//   console.log(i);
+// }
+
+// "while" loop
+// while("somecondition") {
+//     console.log("Running!")
+// }
+
+// function change() {
+
+// }
+
+// const change = () => {
+
+// }
+
+// change()
+
+// // Hoisting
+// console.log(john);
+// const Change = function () {
+//   console.log("Value is changed !");
+// };
+
+// let john = "hardworking";
+
+// let john;
+// let change;
+
+// change = () => {};
+
+// john = "fadsfa";
+
+// Recurstion
+// let counter = 0;
+// function change(counter) {
+//   console.log("change is executed");
+//   counter++;
+//   if (counter < 3) {
+//     change();
+//   }
+// }
+
+// change(counter);
+
+// function random() {
+//   console.log("random");
+// }
+
+// (function () {
+//   console.log("calling when it define !");
+// })()
+
+// change();
 
 // ARRAY
-let arr = ["jai", "Sector-20 A", 423432];
+// const arr = ["jai", { street: "SECTOR 20" }, 4234324];
 
-console.log(arr.length);
+// forEach
+// const forEachData = arr.forEach(function (el) {
+//   console.log("The forEach value: ", el);
+//   return el;
+// });
 
-for (let i = 0; i < arr.length; i++) {
-  console.log(arr[i]);
-}
+// map
+// const mappedData = arr.map(function (el) {
+//   //console.log("The mapped value: ", el);
+//   return el;
+// });
 
-arr.forEach(function () {
-  console.log();
-});
+// console.log("For Each return ", forEachData);
+// console.log("Mapped return ", mappedData);
+
+// Filter
+// const filterData = arr.filter(function (el) {
+//   console.log("The values: ", el);
+// });
+
+// console.log("The Data : ", filterData);
+
+// let number = [1, 5, 7, 0];
+
+// const sortedData = number.sort(function (a, b) {
+//   console.log(a, b);
+//   if (a < b) {
+//     return -1;
+//   }
+
+//   if (a > b) {
+//     return 1;
+//   }
+
+//   // a is equal to b
+//   return 0;
+// });
+
+// console.log("The Data : ", sortedData);
